@@ -1,0 +1,76 @@
+.grid-container{
+    display:grid;
+    height:100vh;
+
+    grid-template-columns: 0.6fr 1fr 5fr;
+    grid-template-rows: 1fr 0.5fr 6fr 1.5fr;
+
+    grid-template-areas:
+    "logo header header"
+    "menu menu menu"
+    "aside aside main"
+    "about about about";
+
+}
+
+.logo{
+    grid-area:logo;
+    background-color: #201e1c;
+}
+
+header{
+    grid-area:header;
+    background-color: #201e1c;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu{
+    grid-area:menu;
+    background-color:#2b2725;
+}
+
+aside{
+    grid-area:aside;
+    background-color:#383331;
+
+}
+
+main{
+    grid-area:main;
+    background-color:#4a4441;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.about{
+    grid-area:about;
+    background-color: #201e1c;
+}
+
+.meow{
+    color: #1986df;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 40px;
+    
+
+}
+
+.kat{
+    color: #1986df;
+    font-size: 21px;
+    font-family: 'Franklin Gothic Medium';
+}
+
+
+
+*{
+    margin:0;
+    padding:0;
+}
+
