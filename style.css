@@ -30,12 +30,19 @@ header{
 .menu{
     grid-area:menu;
     background-color:#2b2725;
+    display:flex;
+    justify-content: center;
+    gap: 100px;
 }
 
 aside{
     grid-area:aside;
     background-color:#383331;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
 }
 
 main{
@@ -51,6 +58,9 @@ main{
 .about{
     grid-area:about;
     background-color: #201e1c;
+    display: flex;
+    justify-content: center;
+    gap: 75px;
 }
 
 .meow{
@@ -64,9 +74,29 @@ main{
 .kat{
     color: #1986df;
     font-size: 21px;
+    font-family: "Arial";
+    font-weight: bold;
+}
+
+.kitten{
+    color:#529edc;
     font-family: 'Franklin Gothic Medium';
 }
 
+.furry{
+    color: #7815e9;
+    font-family: 'Franklin Gothic Medium';
+    font-weight: bolder;
+    font-size: 30px;
+    
+}
+
+.infocat{
+    color:grey;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 17px;
+
+}
 
 
 *{
